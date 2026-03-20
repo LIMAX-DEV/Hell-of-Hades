@@ -290,7 +290,7 @@ def render_menu(selected=None, filter_cat=None):
 
     print(f"  {C['blue_light']}DIGA FILHO MEU, O QUE QUERES{C['reset']}")
     print()
-    write(f"  {C['blue']}▶ {C['white']}")
+    write(f"  {C['blue']}> {C['white']}")
 
 def show_banner_static():
     print()
@@ -314,7 +314,7 @@ def run_tool(key):
     clr()
     print()
     hline("═", C["blue"])
-    box_mid(f"  ▶  Iniciando: {label}", txt_color=C["blue_light"])
+    box_mid(f"  >  Iniciando: {label}", txt_color=C["blue_light"])
     hline("═", C["blue"])
     print()
     
@@ -349,7 +349,7 @@ def choose_category():
         print(f"    {col}[{i}]{C['reset']} {C['blue']}{label}{C['reset']}")
     print(f"    {C['blue_dim']}[0]{C['reset']} {C['blue']}Todas{C['reset']}")
     print()
-    write(f"  {C['blue']}▶ {C['white']}")
+    write(f"  {C['blue']}> {C['white']}")
     try:
         ch = input().strip()
         if ch == "0" or not ch:
