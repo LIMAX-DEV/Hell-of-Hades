@@ -1,5 +1,5 @@
 # ============================================
-# RAT TELEGRAM BUILDER v1.4 - CORREÇÃO COMPLETA
+# RAT TELEGRAM BUILDER v1.4 
 # Autor: LIMAX DEV
 # ============================================
 
