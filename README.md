@@ -10,4 +10,3 @@ Ao utilizar este software, você reconhece e concorda com os seguintes termos:
 - ❌ **Sem Responsabilidade** – Os autores, contribuidores e mantenedores **não assumem qualquer responsabilidade** por uso indevido, danos ou consequências legais decorrentes do uso desta ferramenta.
 - 🔄 **Sem Garantia** – Este software é fornecido "COMO ESTÁ", sem qualquer garantia, expressa ou implícita.
 
-**Se você não concorda com estes termos, não baixe, instale ou utilize esta ferramenta.**
