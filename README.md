@@ -1,6 +1,6 @@
 
 
-**Esta ferramenta é fornecida apenas para fins educacionais e testes de segurança autorizados.**
+# LEIA
 
 Ao utilizar este software, você reconhece e concorda com os seguintes termos:
 
