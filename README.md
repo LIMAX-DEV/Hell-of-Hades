@@ -10,3 +10,6 @@ Ao utilizar este software, você reconhece e concorda com os seguintes termos:
 - ❌ **Sem Responsabilidade** – Os autores, contribuidores e mantenedores **não assumem qualquer responsabilidade** por uso indevido, danos ou consequências legais decorrentes do uso desta ferramenta.
 - 🔄 **Sem Garantia** – Este software é fornecido "COMO ESTÁ", sem qualquer garantia, expressa ou implícita.
 
+# CMD
+     pip install -r requirements.txt
+     python psicofago.py
