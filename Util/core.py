@@ -95,6 +95,7 @@ TOOLS = {
     "72": {"label": "Discord Webhook Generator",          "cat": "disc", "path": get_path("Util/DISCORD/программа/Discord-Webhook-Generator.py")},
     "73": {"label": "Discord Webhook Info",               "cat": "disc", "path": get_path("Util/DISCORD/программа/Discord-Webhook-Info.py")},
     "74": {"label": "Discord Webhook Spammer",            "cat": "disc", "path": get_path("Util/DISCORD/программа/Discord-Webhook-Spammer.py")},
+    "75": {"label": "Discord builder v1rus",              "cat": "disc", "path": get_path("Util/virus-dc/builders.py")},
 }
 
 CAT_LABELS = {
