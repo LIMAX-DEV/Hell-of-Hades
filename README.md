@@ -1,7 +1,7 @@
 <p align="center">
   <img src="Img/tools.png" alt="Logo do Hell of Hades" width="900">
 </p>
-# LEIA
+
 
 Ao utilizar este software, você reconhece e concorda com os seguintes termos:
 
