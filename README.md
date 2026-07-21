@@ -1,4 +1,4 @@
-![Logo do Hell of Hades](img/logo.png)
+![Logo do Hell of Hades](img/tools.png)
 
 # LEIA
 
