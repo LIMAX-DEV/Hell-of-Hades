@@ -1,3 +1,5 @@
+![Logo do Hell of Hades](img/logo.png)
+
 # LEIA
 
 Ao utilizar este software, você reconhece e concorda com os seguintes termos:
