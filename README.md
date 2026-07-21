@@ -1,5 +1,6 @@
-![Logo do Hell of Hades](img/tools.png)
-
+<p align="center">
+  <img src="img/tools.png" alt="Logo do Hell of Hades" width="400">
+</p>
 # LEIA
 
 Ao utilizar este software, você reconhece e concorda com os seguintes termos:
