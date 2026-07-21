@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Img/tools.png" alt="Logo do Hell of Hades" width="400">
+  <img src="Img/tools.png" alt="Logo do Hell of Hades" width="900">
 </p>
 # LEIA
 
