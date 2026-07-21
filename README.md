@@ -9,5 +9,7 @@ Ao utilizar este software, você reconhece e concorda com os seguintes termos:
 - 🔄 *Sem Garantia* – Este software é fornecido "COMO ESTÁ", sem qualquer garantia, expressa ou implícita.
 
 # CMD
+     git clone https://github.com/LIMAX-DEV/Hell-of-Hades.git
+     cd Hell-of-Hades
      pip install -r requirements.txt
      python main.py
