@@ -61,7 +61,7 @@ try:
         except: pass
 
     builder = ctk.CTk()
-    builder.title(f"Kalashnikov {version_tool} - Virus Builder")
+    builder.title(f"EternalRed {version_tool} - Virus Builder")
     builder.geometry("800x780")
     builder.resizable(False, False)
     builder.configure(fg_color=colors["background"])
@@ -131,10 +131,10 @@ try:
 
     def ErrorLogs(message):
         print(f"{BEFORE + current_time_hour() + AFTER} {ERROR} {message + white}")
-        messagebox.showerror(f"Kalashnikov {version_tool} - Virus Builder", message)
+        messagebox.showerror(f"EternalRed {version_tool} - Virus Builder", message)
 
     def InfoLogs(message):
-        messagebox.showinfo(f"Kalashnikov {version_tool} - Virus Builder", message)
+        messagebox.showinfo(f"EternalRed {version_tool} - Virus Builder", message)
 
     def TestWebhook():
         if CheckWebhook(webhook_url.get()) == True:
@@ -149,7 +149,7 @@ try:
     title_frame.grid_propagate(False)
     title_frame.grid_columnconfigure(0, weight=1)
 
-    title = ctk.CTkLabel(title_frame, text="Kalashnikov", font=("Georgia", 48, "bold"), text_color=colors["red"])
+    title = ctk.CTkLabel(title_frame, text="EternalRed", font=("Georgia", 48, "bold"), text_color=colors["red"])
     title.grid(row=1, pady=(10, 0), sticky="we", columnspan=3)
 
     text = ctk.CTkLabel(title_frame, text="A man who has nothing to lose is the most dangerous man of all", font=("Georgia", 13, "italic"), text_color=colors["red"])
@@ -206,7 +206,7 @@ try:
             return
 
         fake_error_window = ctk.CTkToplevel(builder)
-        fake_error_window.title(f"Kalashnikov {version_tool} - Fake Error")
+        fake_error_window.title(f"EternalRed {version_tool} - Fake Error")
 
         fake_error_window.geometry("300x250")
         fake_error_window.resizable(False, False)
